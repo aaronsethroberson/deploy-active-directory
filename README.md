@@ -151,7 +151,7 @@ After the restart, Client-1 is now a member of the Domain.
 <br/>
 <br/>
 
-Lastly we will create another OU titled "_CLIENTS" with same steps we used before with "_EMPLOYEES" and "_ADMINS". Drag and drop "CLIENT-1" from "Computers " into the "_CLIENTS" folder. 
+Finally, we'll create another OU named "_CLIENTS," following the same steps used for "_EMPLOYEES" and "_ADMINS." Then, drag and drop "CLIENT-1" from "Computers" into the "_CLIENTS" folder.
 <br/>
 
 ![Image](https://github.com/user-attachments/assets/f6227402-63f9-487a-8495-e696ec454ab9)
