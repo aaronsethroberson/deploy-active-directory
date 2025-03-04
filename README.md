@@ -97,66 +97,64 @@ Sign back in using "mydomain.com\labuser" (or the username you created) along wi
 Now, we'll create an admin user. Go to the search bar and select "Active Directory Users and Computers."
 <br/>
 
-![Screenshot 2024-10-03 153728](https://github.com/user-attachments/assets/f4551d58-6246-4b15-ba54-8f9026c60de4)
+![Image](https://github.com/user-attachments/assets/b764ce6f-ed2b-4a3a-85ad-0ee8d764aaee)
 <br/>
 <br/>
 
 Right-click the "mydomain.com" folder, then under "New," select "Organizational Unit" and name it "_EMPLOYEES." Next, repeat the same steps to create another folder called "_ADMINS."
 <br/> 
 
-![Screenshot 2024-10-03 153925](https://github.com/user-attachments/assets/16f3fbc8-f141-4cb2-b0a5-7536a3f126dc)
-![Screenshot 2024-10-03 160200](https://github.com/user-attachments/assets/91fda991-2885-452c-8c25-2547b0f371a4)
+![Image](https://github.com/user-attachments/assets/57bf0f36-fab4-43be-ad66-e69d93a0ea23)
 <br/>
 <br/> 
 
 Next, we'll create a new user in the "_ADMINS" folder. To do this, right-click on the "_ADMINS" folder, select "New," and then choose "User
 <br/>
 
-![Screenshot 2024-10-03 154322](https://github.com/user-attachments/assets/32a37eff-a2e7-4237-a81d-fec7c012693c)
+![Image](https://github.com/user-attachments/assets/c8ac368a-93d6-429f-acf5-9ec781f664ca)
 <br/>
 <br/>
 
 During the user creation process, we'll set a password, leave "User must change password at next logon" unchecked, and check "Password never expires" (this is not typically recommended in real life, but we'll do it for the project). 
 <br/>
 
-![Screenshot 2024-10-03 154530](https://github.com/user-attachments/assets/62ed4f68-1d1a-409d-b1b2-957397510598)
-
+![Image](https://github.com/user-attachments/assets/b05b95a6-5a02-4851-9dac-643e110dd9ac)
 <br/>
 <br/>
 
 Jane Doe has been added to the "_ADMINS" OU, but she hasn't been granted admin privileges yet. To assign her as an admin, right-click her username, select "Properties," go to the "Member of" tab, and click "Add." Type "Domain admins," click "Check names," then click "OK," "Apply," and finally "OK" to confirm.
 <br/>
 
-![Screenshot 2024-10-03 160643](https://github.com/user-attachments/assets/d8a9b38f-6810-4a05-ba18-81b2534e346c)
-![Screenshot 2024-10-03 160600](https://github.com/user-attachments/assets/b243013b-dc00-40c3-9d9b-20ae0e71cd78)
+![Image](https://github.com/user-attachments/assets/695f6be0-129e-4797-ac0f-48311bb9acc3)
+![Image](https://github.com/user-attachments/assets/7478efd5-e45f-4e84-a545-12efd368322f)
 <br/>
 <br/>
 
 After logging in, we'll access the Client-1 VM. To connect the client to the domain, go to the search bar and navigate to the "System" section, then select "Rename PC (advanced)." Click "Change," choose "Domain," and enter "mydomain.com." Finally, select "OK.
 <br/> 
 
-![Screenshot 2024-10-03 162736](https://github.com/user-attachments/assets/bcda3555-8d0a-4a74-9a0f-a886ec1242c9)
+![Image](https://github.com/user-attachments/assets/b3616301-3237-4cb3-a42e-06f6a3c88870)
 <br/>
 <br/>
 
-Next it will as for an account with permissions to join the domain. Enter Jane's credentials in the username and password sections. The machine should try and restart after successfully entering the credentials. 
+Next, it will ask for an account with permissions to join the domain. Enter Jane's credentials in the username and password sections. The machine should try and restart after successfully entering the credentials. 
 <br/>
 
-![Screenshot 2024-10-03 162927](https://github.com/user-attachments/assets/3d90a4bf-d6fe-44c8-842f-1cda6cd7e489)
+![Image](https://github.com/user-attachments/assets/cb43663e-46f1-488a-b713-2267714442a5)
 <br/>
 <br/>
 
 After the restart, Client-1 is now a member of the Domain. 
 <br/>
 
-![Screenshot 2024-10-03 163145](https://github.com/user-attachments/assets/3e2c7163-4287-42c5-9e45-691c7397f017)
-
+![Image](https://github.com/user-attachments/assets/94cca414-cadb-4723-88c4-45974a161a2c)
+<br/>
 <br/>
 
 Lastly we will create another OU titled "_CLIENTS" with same steps we used before with "_EMPLOYEES" and "_ADMINS". Drag and drop "CLIENT-1" from "Computers " into the "_CLIENTS" folder. 
 <br/>
 
-![Image](https://github.com/user-attachments/assets/7ff60b6c-5336-460d-8507-fedd8e197106)
-![Image](https://github.com/user-attachments/assets/5dee89d9-3585-4b57-aa5c-d7d25d951129)
+![Image](https://github.com/user-attachments/assets/f6227402-63f9-487a-8495-e696ec454ab9)
+![Image](https://github.com/user-attachments/assets/b821f678-3336-49c3-92fc-340f479baf1a)
 <br/>
 <br/>
