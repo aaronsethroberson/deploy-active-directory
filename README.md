@@ -28,7 +28,7 @@ If it's not already visible, we'll launch Server Manager on our Domain Controlle
 <br/>
 
 
-![Screenshot 2024-10-03 144451](https://github.com/user-attachments/assets/63cd699f-2067-4e01-bcf5-b8a98e010aec)
+![Screenshot 2024-10-03 144451](https://github.com/aaronsethroberson/deploy-active-directory/blob/main/images/1.png)
 <br/>
 <br/>
 
